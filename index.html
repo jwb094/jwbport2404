@@ -29,7 +29,10 @@
       <nav class="l-container">
         <div class="row">
           <div class="col-xs-12">
-            <ul class="flex flex-col md.flex-row">
+            <div>
+              <span>Cross</span>
+            </div>
+            <ul class="flex flex-col md.flex-row gap-24">
               <li> item 1</li>
               <li> item 2</li>
               <li> item 3</li>
@@ -38,30 +41,38 @@
           </div>
         </div>
       </nav>
-      <div class="l-container">
-        <!-- <div class="row"> -->
-        <!-- <div class="col-xs-12 col-md-12"> -->
+      <div class="l-container | gap-48">
+
         <div class="row">
-          <span class="hamburger hamburger-top"></span>
-          <span class="hamburger hamburger-mid"></span>
-          <span class="hamburger hamburger-bot"></span>
+          <div class="col-xs-12 col-md-12 | flex flex-col align-items-end justify-content-end mb-32">
+            <span class="hamburger hamburger-top">T</span>
+            <span class="hamburger hamburger-mid">M</span>
+            <span class="hamburger hamburger-bot">B</span>
+          </div>
         </div>
         <div class="row">
-          <h1>Title</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="col-xs-12 col-md-12 | flex flex-col text-center justify-content-center mb-32"> 
+            <h1>Title</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
         <div class="row">
-          <a href="">Click Here More</a>
+          <div class="col-xs-12 col-md-12 | text-center mb-32">
+            <a href="">Click Here More</a>
+          </div>
         </div>
 
         <!-- </div> -->
       </div>
     </section>
-    <section data-component-features-intro class="" id="">
+    <section data-component-features-intro class="features-intro-bloc py-96" id="">
       <div class="l-container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
-            <h1>Lorem ipsum dolor sit.</h1>
+            <div class="features-intro-heading flex flex-col gap-24">
+              <h1 class="text-center">Lorem ipsum dolor sit.</h1>
+              <hr class="border-2 border-black border-solid mx-auto w-6-12 mb-24">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet non illum, quam sapiente numquam,
               eos quae, perspiciatis enim at fugit aliquam accusantium eligendi impedit nisi itaque obcaecati porro
               esse!</p>
@@ -69,15 +80,17 @@
         </div>
       </div>
     </section>
-    <section data-component-features class="features-bloc" data-template="" id="">
+    <section data-component-features class="features-bloc | py-64" data-template="" id="">
       <div class="l-container">
         <div class="row">
-          <div class="col-xs-12 col-md-12">
-            <h1>Lorem ipsum dolor sit.</h1>
-
-            <ul class="features-list">
-              <li class="features-list__item">
-                <div class="img--bg">
+          <div class="col-xs-12 col-md-12 | text-center gap-12">
+            <div class="features-heading flex flex-col gap-24">
+              <h1>Lorem ipsum dolor sit.</h1>
+              <hr class="border-2 border-black border-solid mx-auto w-6-12 mb-24">
+            </div>
+            <ul class="features-list ">
+              <li class="features-list__item | flex flex-col justify-content-center text-center">
+                <div class="img--bg | mx-auto">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
                     class="bi bi-app-indicator" viewBox="0 0 16 16" id="IconChangeColor">
                     <path
@@ -86,20 +99,26 @@
                     <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" id="mainIconPathAttribute"></path>
                   </svg>
                 </div>
-                <p>feature No1</p>
-                <hr>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, doloremque aliquam. Alias
-                  veniam magnam repudiandae beatae doloremque, soluta reiciendis, placeat facilis adipisci ab libero
-                  nobis, corporis quos voluptate earum voluptates?</p>
+                <p class="">feature No1</p>
+                <hr class="border-2 border-black border-solid mx-auto w-3-12 my-24">
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, doloremque aliquam. Alias
+                  veniam magnam repudiandae beatae doloremque, soluta rei</p>
               </li>
               <!--
-                <li class="features-list__item">
-                <div class="img--bg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" id="mainIconPathAttribute"></path> <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" id="mainIconPathAttribute"></path> </svg>
+                 <li class="features-list__item | flex flex-col justify-content-center text-center">
+                <div class="img--bg | mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                    class="bi bi-app-indicator" viewBox="0 0 16 16" id="IconChangeColor">
+                    <path
+                      d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"
+                      id="mainIconPathAttribute"></path>
+                    <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" id="mainIconPathAttribute"></path>
+                  </svg>
                 </div>
-                  <p>feature No1</p>
-                  <hr>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, doloremque aliquam. Alias veniam magnam repudiandae beatae doloremque, soluta reiciendis, placeat facilis adipisci ab libero nobis, corporis quos voluptate earum voluptates?</p>
+                <p class="">feature No1</p>
+                <hr class="border-2 border-black border-solid mx-auto w-3-12 my-24">
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, doloremque aliquam. Alias
+                  veniam magnam repudiandae beatae doloremque, soluta rei</p>
               </li>
                 -->
             </ul>
@@ -162,7 +181,7 @@
         </div>
       </div>
     </section>
-    <section data-component-portfolio class="portfolio-slider-bloc" id="portfolio-cta-bloc">
+    <section data-component-portfolio class="portfolio-slider-bloc | py-96" id="portfolio-cta-bloc">
       <div class="l-container">
         <div class="row">
           <div class="col-xs-12 col-md-12">
